@@ -2,44 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Красивая HTML-страница</title>
+    <title>Реклама услуг 3D печати</title>
     <style>
         body {
+            background: url('data/back.jpg') center/cover no-repeat #0052A5;
+            color: #FFFFFF;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        section {
+        .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
-            color: #333;
+            margin-top: 20px;
         }
         p {
-            color: #666;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .price-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .price-item {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-panel {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на красивую страницу!</h1>
-    </header>
-    <section>
-        <h2>О нас</h2>
-        <p>Мы создаем красивые HTML-страницы с помощью кода!</p>
-    </section>
+    <div class="container">
+        <h1>Услуги 3D печати</h1>
+        <p>Закажите у нас качественную и быструю 3D печать по доступным ценам. Наши специалисты помогут воплотить ваши идеи в реальность.</p>
+        <img src="data/printer.jpg" alt="Фото принтера">
+        
+        <div class="price-list">
+            <div class="price-item">
+                <h3>PLA</h3>
+                <p>Для прототипов и моделей</p>
+                <p>Минимальная цена за печать - $10</p>
+                <p>Цена за следующие 100 грамм - $5</p>
+            </div>
+            <div class="price-item">
+                <h3>PETG</h3>
+                <p>Для функциональных деталей</p>
+                <p>Минимальная цена за печать - $12</p>
+                <p>Цена за следующие 100 грамм - $6</p>
+            </div>
+            <div class="price-item">
+                <h3>TPU</h3>
+                <p>Для гибких деталей</p>
+                <p>Минимальная цена за печать - $15</p>
+                <p>Цена за следующие 100 грамм - $8</p>
+            </div>
+            <div class="price-item">
+                <h3>ABS</h3>
+                <p>Для деталей с высокой прочностью</p>
+                <p>Минимальная цена за печать - $11</p>
+                <p>Цена за следующие 100 грамм - $6</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-panel">
+        <p>Контакты: телефон , email -</p>
+    </div>
 </body>
 </html>
