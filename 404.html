@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ошибка 404 - Страница не найдена</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            color: #dc3545;
-        }
-        img {
-            width: 200px;
-            border-radius: 50%;
-            margin-top: 20px;
-        }
-        p {
-            color: #888;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error 404</title>
+<style>
+    body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6e7847; /* Цвет земли из игры Minecraft */
+}
+
+.error-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.error-title {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #ddd;
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+.error-container::before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Сдвигаем вверх, чтобы перекрыть часть контейнера */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Высота для верхушки */
+    background: linear-gradient(to bottom, #5a4)
+}
+
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ошибка 404 - Страница не найдена</h1>
-        <img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Famong-us%2Fhome%2FAmong-Us-Logo-1920x1080-1e8b2a3d4fda.jpg" alt="Among Us Character">
-        <p>Кажется, вы потерялись в космосе! Попробуйте вернуться на <a href="/">главную страницу</a>.</p>
+    <div class="error-container">
+        <h1 class="error-title">Error 404</h1>
+        <p class="error-message">Page not found</p>
     </div>
 </body>
 </html>

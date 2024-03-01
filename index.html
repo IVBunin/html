@@ -1,102 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реклама услуг 3D печати</title>
-    <style>
-        body {
-            background: url('data/back.jpg') center/cover no-repeat #0052A5;
-            color: #FFFFFF;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-        .price-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .price-item {
-            background-color: #FFFFFF;
-            color: #000000;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .contact-panel {
-            background-color: #000000;
-            color: #FFFFFF;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-        }
-
-        @media screen and (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL The Mods 9 server</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('background-image.jpg');
+        background-size: cover; /* Масштабирование изображения фона */
+        background-repeat: no-repeat; /* Отключение повтора фона */
+        background-attachment: fixed; /* Фиксация фона при прокрутке */
+        background-position: top;
+        color: white;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .minecraft-logo {
+        width: 100px;
+        height: auto;
+    }
+    .info {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .news {
+        text-align: center;
+    }
+    .mod-list {
+        text-align: left;
+        list-style-type: none;
+        padding: 0;
+    }
+    .mod-list li {
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Услуги 3D печати</h1>
-        <p>Закажите у нас качественную и быструю 3D печать по доступным ценам. Наши специалисты помогут воплотить ваши идеи в реальность.</p>
-        <img src="data/printer.jpg" alt="Фото принтера">
-        
-        <div class="price-list">
-            <div class="price-item">
-                <h3>PLA</h3>
-                <p>Для прототипов и моделей</p>
-                <p>Минимальная цена за печать - $10</p>
-                <p>Цена за следующие 100 грамм - $5</p>
-            </div>
-            <div class="price-item">
-                <h3>PETG</h3>
-                <p>Для функциональных деталей</p>
-                <p>Минимальная цена за печать - $12</p>
-                <p>Цена за следующие 100 грамм - $6</p>
-            </div>
-            <div class="price-item">
-                <h3>TPU</h3>
-                <p>Для гибких деталей</p>
-                <p>Минимальная цена за печать - $15</p>
-                <p>Цена за следующие 100 грамм - $8</p>
-            </div>
-            <div class="price-item">
-                <h3>ABS</h3>
-                <p>Для деталей с высокой прочностью</p>
-                <p>Минимальная цена за печать - $11</p>
-                <p>Цена за следующие 100 грамм - $6</p>
-            </div>
-        </div>
+<div class="container">
+    <div class="info">
+        <h2>Информация о сервере </h2>
+        <p>IP Address: 109.110.56.184:1089</p>
+        <p>Version: 1.20.1</p>
     </div>
-    <div class="contact-panel">
-        <p>Контакты: телефон , email -</p>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+    
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            width: auto;
+        }
+    
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+    
+    <div class="sidebar">
+        <h3>Информация о сервере</h3>
+        <!-- Другая информация о сервере -->
+        <a href="modlist.html" class="button">Список модов</a>
     </div>
+
+    <div class="news">
+        <h2>Server News</h2>
+        <p>Welcome to our Minecraft server! Explore new adventures and build amazing creations.</p>
+    </div>
+</div>
 </body>
 </html>
